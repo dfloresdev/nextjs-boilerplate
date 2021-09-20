@@ -10,7 +10,9 @@
     "lint:fix": "npm run lint -- --fix",
     "prettiercheck": "npx prettier . --check",
     "prettierfix": "npx prettier . --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "next": "11.1.2",
@@ -19,8 +21,16 @@
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/react": "^6.3.8",
     "@types/react": "17.0.21",
+    "@types/styled-components": "^5.1.14",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-styled-components": "^1.13.2",
     "eslint": "^7.12.1",
     "eslint-config-next": "11.1.2",
     "eslint-config-prettier": "^8.3.0",
